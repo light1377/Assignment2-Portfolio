@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-/* img {
+img {
     width: 300px;
     height: 200px;
     margin-right: 20px;
-} */
+}
 
 #MyBioPage {
     display: flex;
@@ -21,49 +21,43 @@ p {
 
 }
 
-/* 
-
 ul {
     text-align: center;
-    /* font-size: 35px; */
-/* 
-    border-style: solid; */
 
-/* border-width: 5px;
+
+    /* border-style: solid;
+    border-width: 5px; */
     list-style-position: inside;
-} */
+}
 
-/* body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 2;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-  }
+}
 
-  h2{
-    font-size: xx-large;
-  }
 
-  #navigation {
-  
+
+#navigation {
+
     display: inline-flex;
-    /* display: flex; */
-width: 50%;
-align-items: center;
-justify-content: space-evenly;
-/* flex-direction: column;
-    align-items: reverse; */
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: reverse;
 
-padding: 5px;
-
+    padding: 5px;
 }
 
 #navigation p {
@@ -81,7 +75,8 @@ padding: 5px;
 
 #navBar h1 {
     width: 50%;
-    font-weight: 500;
+    /* don't know the use for this:
+    font-weight: 100; */
 }
 
 
@@ -89,13 +84,13 @@ padding: 5px;
     margin: 0px 5%;
     display: grid;
     min-height: 200px;
-    /* height: 40vh; */
+    height: 40vh;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     background-image: url("../images/pexels-4.jpg");
-    /* grid-template-areas:
-    "featuredProduct secondaryProduct"
-    "featuredProduct CTA"; */
+    grid-template-areas:
+        "featuredProduct secondaryProduct"
+        "featuredProduct CTA";
 }
 
 .heroGridArea {
@@ -107,7 +102,9 @@ padding: 5px;
     position: relative;
 }
 
-
+#content {
+    border-left: 3px solid rgba(0, 0, 0, 0.8);
+}
 
 #headline {
     max-width: 350px;
@@ -122,6 +119,8 @@ padding: 5px;
 #about {
     grid-area: about;
     /* background-image: url("../images/pexels-4.jpg"); */
+
+
 }
 
 #work {
@@ -144,6 +143,7 @@ padding: 5px;
 .grid-item {
     /* background-color: rgba(255, 255, 0.8, 0.8); */
     /* border-right: 3px solid rgba(0, 0, 0, 0.8); */
+    margin-top: 20;
     padding: 20px;
     font-size: 30px;
     text-align: center;
