@@ -1,24 +1,150 @@
-img {
+* {
+    box-sizing: border-box;
+}
+
+/* img {
     width: 300px;
     height: 200px;
     margin-right: 20px;
+} */
+
+#MyBioPage {
+    display: flex;
+    justify-content: flex-end;
 }
 
 p {
     text-align: center;
+    margin: 0;
     /* font-size: 20px; */
     /* Bold the text. */
-    
+
+}
+
+/* 
+
+ul {
+    text-align: center;
+    /* font-size: 35px; */
+/* 
+    border-style: solid; */
+
+/* border-width: 5px;
+    list-style-position: inside;
+} */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  h2{
+    font-size: xx-large;
+  }
+
+  #navigation {
+  
+    display: inline-flex;
+    /* display: flex; */
+width: 50%;
+align-items: center;
+justify-content: space-evenly;
+/* flex-direction: column;
+    align-items: reverse; */
+
+padding: 5px;
+
+}
+
+#navigation p {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
-ol {
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    background-color: grey;
+}
+
+#navBar h1 {
+    width: 50%;
+    font-weight: 500;
+}
+
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 200px;
+    /* height: 40vh; */
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    background-image: url("../images/pexels-4.jpg");
+    /* grid-template-areas:
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA"; */
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+
+#headline {
+    max-width: 350px;
+    max-height: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+}
+
+
+
+#about {
+    grid-area: about;
+    /* background-image: url("../images/pexels-4.jpg"); */
+}
+
+#work {
+    grid-area: work;
+    /* background-image: url("../images/pexels-2.jpg"); */
+}
+
+#contact {
+    grid-area: contact;
+    /* background-image: url("../images/pexels-3.jpg"); */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 0.8, 0.8); */
+    /* border-right: 3px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
-    /* font-size: 35px; */
-    /* 
-    border-style: solid; */
-
-    border-width: 5px;
-    list-style-position: inside;
-
 }
