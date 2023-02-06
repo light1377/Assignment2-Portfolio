@@ -50,11 +50,11 @@ h6 {
 
 #navigation {
 
-    display: inline-flex;
+    display: flex;
     width: 50%;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     align-items: reverse;
 
     padding: 5px;
